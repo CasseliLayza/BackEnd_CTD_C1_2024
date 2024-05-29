@@ -10,9 +10,6 @@ public class Paciente {
     private LocalDate fechaIngreso;
     private Domicilio domicilio;
 
-    public Paciente() {
-    }
-
     public Paciente(Long id, String nombre, String apellido, int dni, LocalDate fechaIngreso, Domicilio domicilio) {
         this.id = id;
         this.nombre = nombre;
