@@ -1,0 +1,26 @@
+@startuml
+!theme reddress-lightblue
+skinparam backgroundcolor AntiqueWhite/#A9F5BC
+skinparam classBackgroundColor Wheat|F7F8E0
+
+class Arbol {
+    - alto: int
+    - ancho: int
+    - color: String
+    - tipo: String
+    - {static} contador: int
+
+    + Arbol(alto: int,  ancho: int,  colo: Stringr, tipo: String): Arbol
+    + toString(): String
+}
+
+class ArbolFactory {
+    - {static}  bosque: Map<String, Arbol>
+
+    + {static} plantarArboles(alto: int, ancho: int, color: String, tipo: String): Arbol
+    + {static} getBosque(): Map<String, Arbol>
+
+}
+
+ArbolFactory o--"*" Arbol: Arboles
+@enduml

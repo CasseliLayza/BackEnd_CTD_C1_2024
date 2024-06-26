@@ -1,0 +1,73 @@
+
+
+@startuml
+'!theme aws-orange
+'!theme cerulean
+'!theme hacker
+'!theme reddress-darkblue
+'!theme reddress-darkblue
+'!theme reddress-darkorange
+!theme reddress-lightblue
+
+    'skinparam class {
+    'BackgroundColor PaleGreen
+    'ArrowColor SeaGreen
+    'BorderColor SpringGreen
+    '}
+    'skinparam stereotypeCBackgroundColor YellowGreen
+
+    skinparam backgroundcolor AntiqueWhite/#A9F5BC
+    skinparam classBackgroundColor Wheat|F7F8E0
+    'skinparam classBackgroundColor Wheat|E0F8F7
+    'skinparam classBackgroundColor Wheat|light
+    'skinparam classBackgroundColor Wheat|CornflowerBlue
+    'class Foo #red-green
+    'note left of Foo #blue\9932CC
+    'this is my
+    'note on this class
+    'end note
+    'package example #GreenYellow/LightGoldenRodYellow {
+    'class Dummy
+    '}
+
+    'abstract abstract
+    'annotation annotation #pink;line:red;line.bold;text:red
+    'class class #palegreen;line:green;line.dashed;text:green
+    'interface interface #aliceblue;line:blue;line.dotted;text:blue
+    'class class #palegreen ##[dashed]green
+
+class Usuario {
+    - id: String
+    - tipoUsuario: TipoUsuario
+    + Usuario(id: String, tipoUsuario: TipoUsuario): Usuario
+    + getId(): String
+    + getTipoUsuario(): TipoUsuario
+
+}
+enum TipoUsuario  {
+    FREE
+    PREMIUM
+}
+
+Usuario --> TipoUsuario
+
+ interface SpotifyPremium {
+    + descargar(usuario: Usuario): String
+}
+
+
+class ServicioDescargaProxy implements SpotifyPremium {
+    - servicioDescarga: ServicioDescarga
+    + descargar(usuario: Usuario): String
+    - validarMembresia(usuario: Usuario): boolean
+
+    }
+
+class ServicioDescarga implements SpotifyPremium {
+    + descargar(Usuario usuario): String
+}
+
+Usuario <..SpotifyPremium: use
+ServicioDescargaProxy --right> ServicioDescarga
+
+@enduml

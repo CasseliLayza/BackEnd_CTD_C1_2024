@@ -1,0 +1,364 @@
+[2024-05-15 23:02:43] [ ERROR] [MediH2:54] Ocurrio un problemaParametro "#2" no está fijado
+Parameter "#2" is not set; SQL statement:
+INSERT INTO MEDICAMENTOS(CODIGO,NOMBRE,LABORATORIO,CANTIDAD,PRECIO) VALUES(?,?,?,?,?) [90012-224]
+[2024-05-15 23:05:25] [ INFO ] [MediH2:48]  Medicamento registrado => :com.backend.parcial.entity.Medicamento@783a467b
+[2024-05-15 23:07:31] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:27:33] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:28:14] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:28:37] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:28:37] [ INFO ] [MediH2:97]  Medicamento registrado => :null
+[2024-05-15 23:28:49] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:28:49] [ INFO ] [MediH2:97]  Medicamento registrado => :null
+[2024-05-15 23:34:26] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:34:26] [ INFO ] [MediH2:107] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:39:20] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:39:21] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:39:21] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-15 23:39:21] [ ERROR] [MediH2:146] Error de conexion DB
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "123rghjk"
+Data conversion error converting "123rghjk" [22018-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at com.backend.parcial.repository.imp.MediH2.listarAll(MediH2.java:140)
+	at com.backend.parcial.service.imp.Application.main(Application.java:15)
+Caused by: java.lang.NumberFormatException: For input string: "123rghjk"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2024-05-15 23:40:27] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:40:27] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:40:27] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-15 23:40:27] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:27] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:27] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:27] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:27] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:27] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:27] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:27] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:27] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-15 23:40:27] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-15 23:40:55] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:40:56] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:40:56] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:140] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:56] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-15 23:40:56] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 9=ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-15 23:40:59] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:40:59] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:40:59] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:140] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:40:59] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-15 23:40:59] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 9=ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 10=ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-15 23:41:02] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:41:02] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:41:02] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:140] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:02] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-15 23:41:02] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 9=ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 10=ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 11=ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-15 23:41:07] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:41:08] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:41:08] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:140] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:08] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-15 23:41:08] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 9=ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 10=ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 11=ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 12=ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-15 23:41:11] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:41:11] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:41:11] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:140] ID : 13 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:11] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-15 23:41:11] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 9=ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 10=ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 11=ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 12=ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 13=ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-15 23:41:22] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:41:22] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-15 23:41:22] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 13 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:140] ID : 14 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-15 23:41:22] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-15 23:41:22] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 9=ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 10=ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 11=ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 12=ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 13=ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 14=ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-16 00:38:54] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:38:54] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:38:54] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 13 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 14 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:140] ID : 15 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:54] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-16 00:38:54] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 9=ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 10=ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 11=ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 12=ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 13=ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 14=ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 15=ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-16 00:38:55] [ INFO ] [MediH2:50]  Medicamento registrado => :ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:38:55] [ INFO ] [MediH2:109] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:38:55] [ INFO ] [MediH2:133] Lista de todos los elementos:--------------------|
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 13 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 14 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 15 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:140] ID : 16 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:38:55] [ INFO ] [MediH2:142] Lista de todos los elementos:--------------------|
+[2024-05-16 00:38:55] [ INFO ] [MediH2:143] Lista de todos los elementos :{1=ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 2=ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 3=ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 4=ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 5=ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 6=ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 7=ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 8=ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 9=ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 10=ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 11=ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 12=ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 13=ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 14=ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 15=ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, 16=ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5}
+[2024-05-16 00:46:42] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 17, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:46:42] [ INFO ] [MediH2:107] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:46:42] [ INFO ] [MediH2:131] Lista de todos los elementos:--------------------|
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 13 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 14 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 15 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 16 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:139] ID : 17 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:46:42] [ INFO ] [MediH2:141] Lista de todos los elementos:--------------------|
+[2024-05-16 00:46:42] [ INFO ] [MediH2:142] Lista de todos los elementos :[ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 17, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5]
+[2024-05-16 00:49:06] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 18, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:107] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:131] Lista de todos los elementos:--------------------|
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 13 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 14 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 15 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 16 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 17 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:139] ID : 18 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:49:07] [ INFO ] [MediH2:141] Lista de todos los elementos:--------------------|
+[2024-05-16 00:49:07] [ INFO ] [MediH2:142] Lista de todos los elementos :[ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 17, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 18, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5]
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 17, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:49:07] [ INFO ] [MediH2:145] m = ID: 18, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 19, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:107] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:131] Lista de todos los elementos:--------------------|
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 13 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 14 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 15 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 16 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 17 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 18 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:139] ID : 19 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:25] [ INFO ] [MediH2:141] Lista de todos los elementos:--------------------|
+[2024-05-16 00:50:25] [ INFO ] [MediH2:142] Lista de todos los elementos :[ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 17, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 18, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 19, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5]
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 17, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 18, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:25] [ INFO ] [MediH2:145] Medicamento = ID: 19, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:47] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 20, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:107] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:131] Lista de todos los elementos:--------------------|
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 4 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 5 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 6 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 7 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 8 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 9 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 10 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 11 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 12 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 13 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 14 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 15 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 16 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 17 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 18 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 19 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:139] ID : 20 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-05-16 00:50:48] [ INFO ] [MediH2:141] Lista de todos los elementos:--------------------|
+[2024-05-16 00:50:48] [ INFO ] [MediH2:142] Lista de todos los elementos :[ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 17, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 18, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 19, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 20, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5]
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 4, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 5, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 6, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 7, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 8, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 9, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 10, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 11, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 12, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 13, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 14, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 15, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 16, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 17, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 18, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 19, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-05-16 00:50:48] [ INFO ] [MediH2:145] Medicamento => ID: 20, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:48:29] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:48:29] [ INFO ] [MediH2:107] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:48:29] [ INFO ] [MediH2:131] Lista de todos los elementos:--------------------|
+[2024-06-01 14:48:29] [ INFO ] [MediH2:139] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-06-01 14:48:29] [ INFO ] [MediH2:141] Lista de todos los elementos:--------------------|
+[2024-06-01 14:48:29] [ INFO ] [MediH2:142] Lista de todos los elementos :[ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5]
+[2024-06-01 14:48:29] [ INFO ] [MediH2:145] Medicamento => ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:21] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:22] [ INFO ] [MediH2:107] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:22] [ INFO ] [MediH2:131] Lista de todos los elementos:--------------------|
+[2024-06-01 14:49:22] [ INFO ] [MediH2:139] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-06-01 14:49:22] [ INFO ] [MediH2:139] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-06-01 14:49:22] [ INFO ] [MediH2:141] Lista de todos los elementos:--------------------|
+[2024-06-01 14:49:22] [ INFO ] [MediH2:142] Lista de todos los elementos :[ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5]
+[2024-06-01 14:49:22] [ INFO ] [MediH2:145] Medicamento => ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:22] [ INFO ] [MediH2:145] Medicamento => ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:34] [ INFO ] [MediH2:48]  Medicamento registrado => :ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:34] [ INFO ] [MediH2:107] Se ha encontrado el medicamento con ID=1: 	=>> ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:34] [ INFO ] [MediH2:131] Lista de todos los elementos:--------------------|
+[2024-06-01 14:49:34] [ INFO ] [MediH2:139] ID : 1 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-06-01 14:49:34] [ INFO ] [MediH2:139] ID : 2 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-06-01 14:49:34] [ INFO ] [MediH2:139] ID : 3 { 123rghjk : Panadol : Bells : 20 : 1.5 }
+[2024-06-01 14:49:34] [ INFO ] [MediH2:141] Lista de todos los elementos:--------------------|
+[2024-06-01 14:49:34] [ INFO ] [MediH2:142] Lista de todos los elementos :[ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5, ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5]
+[2024-06-01 14:49:34] [ INFO ] [MediH2:145] Medicamento => ID: 1, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:34] [ INFO ] [MediH2:145] Medicamento => ID: 2, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
+[2024-06-01 14:49:34] [ INFO ] [MediH2:145] Medicamento => ID: 3, Codigo: 123rghjk, Nombre: Panadol, Laboratorio: Bells, Cantidad: 20, Precio: 1.5
